@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPHREM TECH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <h1>EPHREM TECH</h1>
+        <h3>Learn Web Development</h3>
+    </div>
+    <div class="navbar" id="mynavbar">
+        <a href="#">HOME</a>
+        <a href="#">DESIGN</a>
+        <div class="dropdown">
+            <button class="dropdownbtn">TUTORIALS</button>
+            <div class="dropdown-list">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JAVASCRIPT</a>
+                <a href="#">PHP</a>
+                <a href="#">MYSQL</a>
+                <a href="#">PYTHON</a>
+            </div>
+        </div>
+        <a href="#">CONTACT</a>
+        <a href="#">ABOUT</a>
+        <a href="#" class="ri">LOGIN</a>
+        <a href="#" class="ri">SIGNUP</a>
+        <a href="javascript:void(0);" style="font-size: 15px;" class="icon"
+         onclick="myFunction()">&#9776;</a>
+ </div>
+ <div class="cont">
+    <h1>Learn <br> <span>Technology</span></h1>
+    <p class="para">Learn about technology inorder to change your life and make things easier now in this website we discuss about
+        programming language important for website development. I hope you get basic idea from this website inorder to develop 
+        your own website.
+    </p>
+   <button class="learn"><a href="#">start now</a></button>
+ </div>
+ <script>
+    function myFunction(){
+        var x = document.getElementById("mynavbar");
+        if(x.className==="navbar"){
+            x.className += "responsive";
+        } 
+        else{
+           x.className="navbar";
+        }        
+    }
+ </script>
+</body>
+</html>
